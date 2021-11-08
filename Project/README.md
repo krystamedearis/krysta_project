@@ -1,0 +1,1 @@
+This analysis takes a dataset and medals makes sure all of the variables are numeric. The first step turns variables into numeric values, and only keeps teams within the top 10 in Rank of medals. The next step creates bar chart and pic chart of Gold medal counts from the top 10 teams. This will use the ‘tidyverse’ package in R.
