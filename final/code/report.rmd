@@ -1,0 +1,32 @@
+---
+output: html_document
+date: "`r format(Sys.Date(), '%Y-%m-%d')`"
+author: Krysta's Report
+Title: Final Project
+---
+
+```{r, include = FALSE}
+here::i_am("code/report.rmd")
+knitr::opts_knit$set(root.dir = here::here())
+```
+
+This reports analyzes the distribution of gold medals of the top 10 countries during the 2020 olympics.
+
+## Table 1
+```{r, table 1, echo = FALSE}
+data_for_table <- readRDS(here::here(
+  "output", "data_for_table.rds"
+  ))
+
+knitr::kable(data_for_table)
+```
+
+
+Below is a figure showing the top 10 medal Gold Medal earning countries from the 2020 olympics.
+
+
+#### Figure 1
+```{r, echo = FALSE}
+knitr::include_graphics(here::here("output","bp.png"))
+```
+We see that the United States was the top earner of gold medals with almost 40.
